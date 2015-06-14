@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- vrijednosti korištene pri kreiranju tablice u 2. prozoru aplikacije -->
+    <integer name="brojStupaca">2</integer>
+    <integer name="brojRedaka">3</integer>
+    <integer name="paddingLijevi">3</integer>
+ 
+    
+    <!-- **********Brojevi telefona -->
+    <integer name="telBrojCammeo">1212</integer>
+    <integer name="telBrojRadioTaxi">060223335</integer>
+    <integer name="telBrojEkoTaxi">1414</integer>
+    <!-- **********Brojevi telefona -->
+    
+    
+    <!-- trajanje puta po km u minutama -->
+    <integer name="trajanjePoKm">3</integer>
+    
+</resources>

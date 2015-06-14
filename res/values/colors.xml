@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- boja pozadine grida u tab2 -->
+    <color name="pozadinaGrid">#E0FFFF</color>
+</resources>

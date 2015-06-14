@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hr.tvz.taxizagreb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- najmanja verzija android sdk-a na kojem će aplikacija raditi (android 4.0.0) i ona na koju se cilja da radi (android 4.1.2) -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+
+        <!-- Najava da će aplikacija koristiti OpenGL funkcionalnosti -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    
+    
+    <!-- Aplikaciza zatjeva navedena dopuštenja kako bi ispravno radila. -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+        <permission
+        android:name="com.vogella.android.locationapi.maps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.vogella.android.locationapi.maps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+    
+    <!-- Navođenje ikone aplikacije, naziva, teme, koje dodatne libraryje koristi, koja je glavna aktivnost, zaključavanje
+    	orijentacije ekrana na portret -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+             <uses-library android:name="com.google.android.maps"/>
+        <activity
+            android:name="hr.tvz.taxizagreb.MainActivity"
+            android:label="@string/app_name" 
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+ 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+           <meta-data 
+             android:name="com.google.android.gms.version"
+             android:value="@integer/google_play_services_version"
+             />
+           <!-- u meta-data pod android:value atributom je naveden Google Maps API V2 kljuć koji aplikacija koristi
+           		kako bi pristupala metodama i funkcijama Google Maps API-ja -->
+           <meta-data
+               android:name="com.google.android.maps.v2.API_KEY"
+               android:value="AIzaSyCy6HbhiahXflp_53Y95TkK6HjCNVqECuY" 
+               />
+           
+
+           <!-- Najava da će se koristiti i MapViewActivity uz MainActivity -->
+           <activity android:name="MapViewActivity"></activity>
+    </application>
+
+</manifest>

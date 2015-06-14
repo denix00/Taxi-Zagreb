@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/txtPolaziste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/txtPolaziste" 
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/txtOdrediste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopTextField"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/txtOdrediste"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnCalcRoute"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopBtnPrikazi"
+        android:hint="@string/txtPolaziste"
+        android:onClick="clickHandler"
+        android:text="@string/btnPrikazi" />
+    
+<!-- Korišteno za ispis podataka kod testiranja
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+ -->
+
+    <Button
+        android:id="@+id/btnResetFields"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="clickHandler"
+        android:text="@string/btnResetFields" />
+ 
+</LinearLayout>

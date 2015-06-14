@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Ime aplikacije -->
+    <string name="app_name">Taxi Zagreb</string>
+    
+    <!-- Naziv 1. prozora -->
+    <string name="label1">Input screen</string>
+    
+    <!-- Naziv 2. prozora -->
+    <string name="label2">Price List</string>
+    
+    <!-- Naziv 3. prozora -->
+    <string name="label3">Help</string>
+    
+    <!-- Naziv glavne aktivnosti -->
+    <string name="title_activity_main">MainActivity</string>
+    
+	<!--Sadržaj gumba btnPrikazi  -->
+    <string name="btnPrikazi">Calculate Route</string>
+    
+    <!-- Sadržaj gumba btnResetFields -->
+    <string name="btnResetFields">Reset Fields</string>
+    
+    <!-- Hint u EditTextu polazišta -->
+    <string name="txtPolaziste">Starting point</string>
+    
+    <!-- Hint u EditTextu odredišta -->
+    <string name="txtOdrediste">Ending point</string>
+    
+    <!-- Početni sadržaj textviewa -->
+    <string name="txtPribUdaljenost">Distance: * km</string>
+    
+     <!-- Početni sadržaj textviewa -->
+    <string name="txtTrajanjePutovanja">Travel time: * min</string>
+    
+    <!-- Početni sadržaj textviewa -->
+    <string name="txtCijena">Price: * HRK</string>
+    
+    <!-- Početni sadržaj textviewa -->
+    <string name="txtNazivCammeo">Cammeo</string>
+    <!-- Početni sadržaj textviewa -->
+    <string name="txtTelBrojCammeo">Phone: 1212</string>
+    
+    <!-- Početni sadržaj textviewa -->
+    <string name="txtNazivRadioTaxi">Radio Taxi</string>
+    <!-- Početni sadržaj textviewa -->
+    <string name="txtTelBrojRadioTaxi">Phone: 1777</string>
+    
+    <!-- Početni sadržaj textviewa -->
+    <string name="txtNazivEkoTaxi">Eko Taxi</string>
+    <!-- Početni sadržaj textviewa -->
+    <string name="txtTelBrojEkoTaxi">Phone: 1414</string>
+    
+    
+    <!-- Toast prazne adrese -->
+    <string name="toastPrazneAdrese">Please enter the starting and the destination points</string>
+    
+    <!-- Toast location not found -->
+    <string name="toastLocationNotFound">Location not found</string>
+    
+    <!-- Toast connect to the internet -->
+    <string name="toastConnectInternet">Please connect to the Internet</string>
+    
+    <!-- Toast ruta je izračunata -->
+    <string name="toastRouteCalc">The route is calculated</string>
+    
+    
+    <!-- Sadržaj gumba btnZovi  -->
+    <string name="btnZovi">Call</string>
+    <!-- Sadržaj gumba btnKarta -->
+    <string name="btnKarta">Map</string>
+    
+    
+    
+        <!-- *****Cijene po km****** -->
+    <string name="cammeoStart">15</string>
+    <!--  -->
+    <string name="cammeoFree">2</string>
+    <!--  -->
+    <string name="cammeoKilometar">6</string>
+    <!--  -->
+    <string name="ekoTaxiStart">8.80</string>
+    <!--  -->
+    <string name="ekoTaxiFree">0</string>
+    <!--  -->
+    <string name="ekoTaxiKilometar">5</string>
+    <!--  -->
+    <string name="radioTaxiStart">9.90</string>
+    <!--  -->
+    <string name="radioTaxiFree">0</string>
+    <!--  -->
+    <string name="radioTaxiKilometar">4.90</string>
+    <!-- *****Cijene****** -->
+    
+    
+    <!-- help -->
+    <string name="help">
+        \tThis application is intended for informational purposes only.\n\n
+        \tThis application helps you find a taxi service with the lowest price from all the available taxi services in the Croatian city of Zagreb.\n\n
+        \tFor it to be fully functional, the application needs a valid Internet connection.\n\n
+        \tWithout a valid Internet connection, the application can only show taxi service companies\' names and their telephone numbers that can be called.\n\n
+        \tThe starting and the destination points must be entered in the following format: street_name house_number*\n
+        *optional\n\n
+        \tAfter selecting Calculate Route, the prices screen will display the distance between the two points, estimated travel time and the estimated prices for each of the taxi service companies.\n
+        \tThe action also enables the Map button that, when selected, displays a Google Maps view showing the starting point(marked by a dot) and the ending point(marked by an A).\n\n\n
+        \tIzradio: Denis Glad\n
+        \tEmail: dglad1@tvz.hr
+        </string>
+</resources>

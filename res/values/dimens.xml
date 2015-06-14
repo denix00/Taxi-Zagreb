@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- dimenzije margina za pojedine elemente sučelja -->
+    <dimen name="marginTopRow">10dp</dimen>
+    <dimen name="marginLijeviGrid">3dp</dimen>
+    <dimen name="marginTopTextField">5dp</dimen>
+    <dimen name="marginTopBtnPrikazi">10dp</dimen>
+    <dimen name="marginTextViewTab3">5dp</dimen>
+</resources>
